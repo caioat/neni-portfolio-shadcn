@@ -88,6 +88,11 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  /* my additions */
+  --font-sans: "Red Hat Display", sans-serif;
+  --color-footer-gray: hsla(36, 10%, 19%, 1);
+  --color-purple: hsla(258, 82%, 51%, 1);
+  /* my additions */
 }
 
 @layer base {
@@ -97,11 +102,27 @@
   body {
     @apply bg-background text-foreground;
   }
+  /* my additions */
+  h2 {
+    @apply text-[31px] font-semibold; /* Adjust these values as needed */
+  }
+  /* my additions */
+}
+
+/* my additions */
+@font-face {
+  font-family: "Red Hat Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
 }
 
 .container-wrapper {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  max-width: 1440px;
+  /* max-width: 1440px; */
+  max-width: 912px;
 }
+/* my additions */
