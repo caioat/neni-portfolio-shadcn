@@ -9,7 +9,7 @@ export const Route = createRootRoute({
       <div className="relative flex min-h-svh flex-col bg-background">
         <div className="flex flex-1 flex-col">
           <Header />
-          <div className="container-wrapper">
+          <div className="container-wrapper pt-16 pb-16">
             <Outlet />
           </div>
           <Footer />

@@ -4,7 +4,7 @@ import owl1 from "../assets/owl_1.svg";
 
 export const Footer = () => {
   return (
-    <footer className="py-6 md:py-0 bg-footer-gray">
+    <footer className="py-6 md:py-0 bg-foreground">
       <div className="container-wrapper">
         <div className="h-[378px]">
           <div className="flex justify-center">

@@ -6,7 +6,8 @@
 
 :root {
   --background: hsl(0 0% 100%);
-  --foreground: hsl(20 14.3% 4.1%);
+  /* --foreground: hsl(20 14.3% 4.1%); */
+  --foreground: hsl(36, 10%, 19%);
   --card: hsl(0 0% 100%);
   --card-foreground: hsl(20 14.3% 4.1%);
   --popover: hsl(0 0% 100%);
@@ -90,7 +91,6 @@
   --radius-xl: calc(var(--radius) + 4px);
   /* my additions */
   --font-sans: "Red Hat Display", sans-serif;
-  --color-footer-gray: hsla(36, 10%, 19%, 1);
   --color-purple: hsla(258, 82%, 51%, 1);
   /* my additions */
 }
