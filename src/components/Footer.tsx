@@ -3,6 +3,10 @@ import { MoveUp, MoveUpRight, Mail, Linkedin } from "lucide-react";
 import owl1 from "../assets/owl_1.svg";
 
 export const Footer = () => {
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <footer className="py-6 md:py-0 bg-foreground">
       <div className="container-wrapper">
@@ -11,6 +15,7 @@ export const Footer = () => {
             <Button
               size="icon"
               className="bg-purple hover:bg-purple/90 rounded-full relative top-[-24px] w-12 h-12"
+              onClick={handleScrollToTop}
             >
               <MoveUp />
             </Button>

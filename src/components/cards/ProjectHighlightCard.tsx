@@ -45,7 +45,7 @@ export const ProjectHighlightCard = ({
           </CardFooter>
         </div>
         <div>
-          <img src={image} alt="" className="h-full rounded-br-lg" />
+          <img src={image} alt="" className="h-full w-[495px] rounded-br-lg" />
         </div>
       </Card>
     </>
