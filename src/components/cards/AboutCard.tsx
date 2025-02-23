@@ -48,6 +48,7 @@ export const AboutCard = ({
           <CardFooter>
             <a
               href={redirectLink}
+              target="_blank"
               className="text-sm font-light text-purple p-0 hover:underline"
             >
               <p className="flex items-center gap-2">
