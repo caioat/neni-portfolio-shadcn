@@ -34,7 +34,7 @@ export const MiniCard = ({
           </CardFooter>
         </div>
         <div className="flex items-center justify-center p-4">
-          <a href={redirectLink}>
+          <a href={redirectLink} target="_blank">
             <MoveRight className="text-purple" />
           </a>
         </div>

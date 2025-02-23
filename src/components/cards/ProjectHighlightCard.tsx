@@ -38,7 +38,7 @@ export const ProjectHighlightCard = ({
               className="text-sm font-light border-1 border-white"
               asChild
             >
-              <a href={redirectLink}>
+              <a href={redirectLink} target="_blank">
                 View case <MoveRight />
               </a>
             </Button>
