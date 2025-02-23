@@ -104,6 +104,9 @@
     @apply bg-background text-foreground;
   }
   /* my additions */
+  h1 {
+    @apply leading-26;
+  }
   h2 {
     @apply text-[31px] font-semibold; /* Adjust these values as needed */
   }

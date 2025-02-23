@@ -9,6 +9,7 @@ import acordoCertoCard from "../assets/acordo_certo_card.svg";
 import postGraduationCard from "../assets/post_graduation_card.svg";
 import avatar from "../assets/avatar.svg";
 import { TestimonialCard } from "@/components/cards/TestimonialCard";
+import { CaptainWidget } from "@/components/CaptainWidget";
 
 export const Route = createLazyFileRoute("/")({
   component: Index,
@@ -17,7 +18,7 @@ export const Route = createLazyFileRoute("/")({
 function Index() {
   return (
     <>
-      <div>captain image</div>
+      <CaptainWidget />
       <div className="pb-16">
         <p className="pb-4 font-medium">Highlight projects</p>
         <ProjectHighlightCard
