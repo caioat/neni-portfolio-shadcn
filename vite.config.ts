@@ -5,6 +5,7 @@ import { defineConfig } from "vite";
 import { TanStackRouterVite } from "@tanstack/router-plugin/vite";
 
 export default defineConfig({
+  base: "/neni-portfolio-shadcn/",
   plugins: [
     TanStackRouterVite({ autoCodeSplitting: true }),
     react(),
