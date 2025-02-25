@@ -110,6 +110,10 @@
   h2 {
     @apply text-[31px] font-semibold; /* Adjust these values as needed */
   }
+
+  p {
+    @apply leading-5;
+  }
   /* my additions */
 }
 
