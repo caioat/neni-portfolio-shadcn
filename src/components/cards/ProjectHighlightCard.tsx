@@ -24,7 +24,7 @@ export const ProjectHighlightCard = ({
   return (
     <>
       <Card className="flex justify-between bg-foreground text-white">
-        <div className="w-[50%]">
+        <div className="w-[392px]">
           <CardHeader>
             <CardTitle className="text-2xl">{title}</CardTitle>
           </CardHeader>
@@ -45,7 +45,7 @@ export const ProjectHighlightCard = ({
           </CardFooter>
         </div>
         <div>
-          <img src={image} alt="" className="h-full w-[495px] rounded-br-lg" />
+          <img src={image} alt="" className="rounded-br-3xl" />
         </div>
       </Card>
     </>

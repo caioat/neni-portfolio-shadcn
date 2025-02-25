@@ -22,7 +22,7 @@ function Index() {
       <div className="pb-16">
         <p className="pb-4 font-medium">Highlight projects</p>
         <ProjectHighlightCard
-          title="Creating a Veterinary System for the Biggest Pet Shop in Brazil"
+          title="Creating a Veterinary System for a Big Pet Shop in Brazil"
           content="Ecommerce Company"
           image={vetSystemCard}
           redirectLink="https://carolinamiguel.medium.com/developing-a-veterinary-system-for-pet-anjo-acquired-by-one-of-the-largest-pet-shops-in-brazil-fe230521345b"
