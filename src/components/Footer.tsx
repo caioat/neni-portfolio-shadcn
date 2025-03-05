@@ -54,7 +54,17 @@ export const Footer = () => {
                 <p className="font-semibold">
                   Brazilian living in Porto, Portugal
                 </p>
-                <p className="pt-4">
+                <p className="pt-2">
+                  This portfolio was designed in Figma by me and developed by{" "}
+                  <a
+                    href="https://www.linkedin.com/in/caio-augusto-travagin"
+                    target="_blank"
+                    className="hover:underline"
+                  >
+                    Caio
+                  </a>
+                </p>
+                <p className="pt-4 text-xs font-light">
                   Copyright © 2024 Carolina Miguel. All rights reserved.
                 </p>
               </div>
