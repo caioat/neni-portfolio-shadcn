@@ -108,6 +108,9 @@
     @apply leading-26;
   }
   h2 {
+    @apply text-[40px] font-bold;
+  }
+  h3 {
     @apply text-[31px] font-semibold; /* Adjust these values as needed */
   }
 

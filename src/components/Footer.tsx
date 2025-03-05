@@ -14,7 +14,7 @@ export const Footer = () => {
           <div className="flex justify-center">
             <Button
               size="icon"
-              className="bg-purple hover:bg-purple/90 rounded-full relative top-[-24px] w-12 h-12"
+              className="bg-purple hover:bg-purple/80 rounded-full relative top-[-24px] w-12 h-12"
               onClick={handleScrollToTop}
             >
               <MoveUp />
@@ -22,16 +22,11 @@ export const Footer = () => {
           </div>
           <div className="h-[300px] flex justify-between">
             <div className="text-white">
-              <h2>
+              <h3>
                 Send me an email. Or a message. <s>Or an Owl.</s>
-              </h2>
+              </h3>
               <div className="pt-4">
-                <Button
-                  variant="ghost"
-                  size="lg"
-                  className="text-xl font-light border-1 border-white"
-                  asChild
-                >
+                <Button variant="ghost" size="lg" className="text-xl" asChild>
                   <a href="mailto:cm.carolmiguel@gmail.com">
                     <Mail /> Email <MoveUpRight />
                   </a>
@@ -39,7 +34,7 @@ export const Footer = () => {
                 <Button
                   variant="ghost"
                   size="lg"
-                  className="text-xl font-light border-1 border-white ml-6"
+                  className="text-xl ml-6"
                   asChild
                 >
                   <a
