@@ -2,6 +2,7 @@ import { createLazyFileRoute } from "@tanstack/react-router";
 import { Download, MoveUpRight } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
+import { AboutCard } from "@/components/cards/AboutCard";
 import drawingAboutMe1 from "@/assets/drawing_aboutMe.svg";
 import photoAboutMe1 from "@/assets/photo_aboutMe_1.svg";
 import photoAboutMe2 from "@/assets/photo_aboutMe_2.svg";
@@ -10,6 +11,18 @@ import photoAboutMe4 from "@/assets/photo_aboutMe_4.svg";
 import photoAboutMe5 from "@/assets/photo_aboutMe_5.svg";
 import photoAboutMe6 from "@/assets/photo_aboutMe_6.svg";
 import photoAboutMe7 from "@/assets/photo_aboutMe_7.svg";
+import photoAboutMe8 from "@/assets/photo_aboutMe_8.svg";
+import photoAboutMe9 from "@/assets/photo_aboutMe_9.svg";
+import photoAboutMe10 from "@/assets/photo_aboutMe_10.svg";
+import photoAboutMe11 from "@/assets/photo_aboutMe_11.svg";
+import photoAboutMe12 from "@/assets/photo_aboutMe_12.svg";
+import photoAboutMe13 from "@/assets/photo_aboutMe_13.svg";
+import photoAboutMe14 from "@/assets/photo_aboutMe_14.svg";
+import photoAboutMe15 from "@/assets/photo_aboutMe_15.svg";
+import photoAboutMe16 from "@/assets/photo_aboutMe_16.svg";
+import photoAboutMe17 from "@/assets/photo_aboutMe_17.svg";
+import aboutMeCard1 from "@/assets/aboutMe_card_1.svg";
+import aboutMeCard2 from "@/assets/aboutMe_card_2.svg";
 
 export const Route = createLazyFileRoute("/aboutMe")({
   component: AboutMe,
@@ -70,7 +83,7 @@ function AboutMe() {
       />
       <img src={photoAboutMe6} alt="Photo AboutMe 6" className="col-span-4" />
       <img src={photoAboutMe7} alt="Photo AboutMe 7" className="col-span-4" />
-      <div className="col-span-10 text-xl">
+      <div className="col-span-10 text-xl pt-12">
         <i>
           <h2>“Creative adult is the child who survived”</h2>
           <h2 className="font-normal">Ursula K. Le Guin</h2>
@@ -104,6 +117,44 @@ function AboutMe() {
           studying animals. So if you need any health tips for your pet or any
           trivia about the area, just give me a call! 😊
         </p>
+      </div>
+      <img src={photoAboutMe8} alt="Photo AboutMe 8" className="col-span-10" />
+      <div className="col-span-4">
+        <img src={photoAboutMe9} alt="Photo AboutMe 9" />
+        <img src={photoAboutMe10} alt="Photo AboutMe 10" className="pt-6" />
+      </div>
+      <img src={photoAboutMe11} alt="Photo AboutMe 11" className="col-span-6" />
+      <div className="col-span-4">
+        <img src={photoAboutMe12} alt="Photo AboutMe 12" />
+        <img src={photoAboutMe13} alt="Photo AboutMe 13" className="pt-6" />
+      </div>
+      <img src={photoAboutMe14} alt="Photo AboutMe 14" className="col-span-6" />
+      <img
+        src={photoAboutMe15}
+        alt="Photo AboutMe 15"
+        className="col-span-10"
+      />
+      <img src={photoAboutMe16} alt="Photo AboutMe 16" className="col-span-5" />
+      <img src={photoAboutMe17} alt="Photo AboutMe 17" className="col-span-5" />
+      <div className="pt-12 col-span-10 flex w-full gap-6">
+        <div>
+          <p className="pb-4 font-medium">Design cases</p>
+          <AboutCard
+            title="My job as a Product Designer"
+            content="Check out some case from the companies I’ve worked for and study projects. Here, you can see a bit of my Research and Visual process."
+            image={aboutMeCard1}
+            redirectLink="/aboutMe"
+          />
+        </div>
+        <div>
+          <p className="pb-4 font-medium">Illustrations jobs</p>
+          <AboutCard
+            title="My job as a Illustrator"
+            content="Check out some of my work as an illustrator, including projects for digital companies, book illustrations, and personal work."
+            image={aboutMeCard2}
+            redirectLink="/aboutMe"
+          />
+        </div>
       </div>
     </div>
   );
