@@ -134,27 +134,49 @@ function AboutMe() {
         alt="Photo AboutMe 15"
         className="col-span-10"
       />
-      <img src={photoAboutMe16} alt="Photo AboutMe 16" className="col-span-5" />
-      <img src={photoAboutMe17} alt="Photo AboutMe 17" className="col-span-5" />
-      <div className="pt-12 col-span-10 flex w-full gap-6">
-        <div>
-          <p className="pb-4 font-medium">Design cases</p>
-          <AboutCard
-            title="My job as a Product Designer"
-            content="Check out some case from the companies I’ve worked for and study projects. Here, you can see a bit of my Research and Visual process."
-            image={aboutMeCard1}
-            redirectLink="/aboutMe"
-          />
-        </div>
-        <div>
-          <p className="pb-4 font-medium">Illustrations jobs</p>
-          <AboutCard
-            title="My job as a Illustrator"
-            content="Check out some of my work as an illustrator, including projects for digital companies, book illustrations, and personal work."
-            image={aboutMeCard2}
-            redirectLink="/aboutMe"
-          />
-        </div>
+      <img
+        src={photoAboutMe16}
+        alt="Photo AboutMe 16"
+        className="col-span-5  pb-12"
+      />
+      <img
+        src={photoAboutMe17}
+        alt="Photo AboutMe 17"
+        className="col-span-5 pb-12"
+      />
+      <div className="col-span-5">
+        <p className="pb-4 font-medium">Design cases</p>
+        <AboutCard
+          title="My job as a Product Designer"
+          content="Check out some case from the companies I’ve worked for and study projects. Here, you can see a bit of my Research and Visual process."
+          image={{
+            src: aboutMeCard1,
+            alt: "AboutMe Card 1",
+            className: "max-w-31 h-43 mt-6",
+          }}
+          redirectLink={{
+            href: "https://carolinamiguel.medium.com/",
+            target: "_target",
+            text: "View all",
+          }}
+        />
+      </div>
+      <div className="col-span-5">
+        <p className="pb-4 font-medium">Illustrations jobs</p>
+        <AboutCard
+          title="My job as a Illustrator"
+          content="Check out some of my work as an illustrator, including projects for digital companies, book illustrations, and personal work."
+          image={{
+            src: aboutMeCard2,
+            alt: "AboutMe Card 2",
+            className: "max-w-30 h-40 ml-4",
+          }}
+          redirectLink={{
+            href: "/illustration",
+            target: "_self",
+            text: "View all",
+          }}
+        />
       </div>
     </div>
   );

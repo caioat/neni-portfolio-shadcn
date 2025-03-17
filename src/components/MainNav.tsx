@@ -21,12 +21,6 @@ export const MainNav = () => {
         >
           About me
         </Link>
-        <Link
-          to="/contact"
-          className="[&.active]:text-purple [&.active]:underline"
-        >
-          Contact
-        </Link>
       </nav>
     </div>
   );

@@ -6,14 +6,14 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
-import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import { MoveRight } from "lucide-react";
+import { AboutCardImage, AboutCardLink } from "./types/AboutCard.types";
 
 interface AboutCardProps {
   title: string;
   content: string;
-  image: string;
-  redirectLink: string;
+  image: AboutCardImage;
+  redirectLink: AboutCardLink;
   className?: string;
 }
 
@@ -28,15 +28,12 @@ export const AboutCard = ({
     <>
       <Card
         className={cn(
-          "flex justify-between bg-secondary text-foreground",
+          "flex justify-between bg-secondary text-foreground h-49",
           className
         )}
       >
-        <div className="flex items-center pl-6">
-          <Avatar className="w-24 h-24">
-            <AvatarImage src={image} alt="me" />
-            <AvatarFallback>CN</AvatarFallback>
-          </Avatar>
+        <div className="flex items-center">
+          <img src={image.src} alt={image.alt} className={image.className} />
         </div>
         <div>
           <CardHeader className="pb-2">
@@ -47,11 +44,12 @@ export const AboutCard = ({
           </CardContent>
           <CardFooter>
             <a
-              href={redirectLink}
+              href={redirectLink.href}
+              target={redirectLink.target}
               className="text-sm font-light text-purple p-0 hover:underline"
             >
               <p className="flex items-center gap-2">
-                About me <MoveRight />
+                {redirectLink.text} <MoveRight />
               </p>
             </a>
           </CardFooter>

@@ -78,8 +78,16 @@ function Index() {
           <AboutCard
             title="Hello, I’m Carol!"
             content="I have more than 6 years of experience in Design and Illustration, working with Product Design, Graphic Design, and Illustration for digital and printed."
-            image={avatar}
-            redirectLink="/aboutMe"
+            image={{
+              src: avatar,
+              alt: "Avatar",
+              className: "max-w-25 h-25 ml-6",
+            }}
+            redirectLink={{
+              href: "/aboutMe",
+              target: "_self",
+              text: "About me",
+            }}
           />
         </div>
         <div className="w-full">
