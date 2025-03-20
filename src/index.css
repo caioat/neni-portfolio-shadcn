@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
 @import "tailwindcss";
 
 @plugin "tailwindcss-animate";
@@ -92,6 +93,8 @@
   --radius-xl: calc(var(--radius) + 4px);
   /* my additions */
   --font-sans: "Red Hat Display", sans-serif;
+  --font-weight-semibold: 700;
+  --font-weight-bold: 800;
   --color-purple: hsla(258, 82%, 51%, 1);
   /* my additions */
 }
@@ -121,13 +124,12 @@
 }
 
 /* my additions */
-@font-face {
-  font-family: "Red Hat Display", serif;
+/* @font-face {
+  font-family: "Red Hat Display", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  src: url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
-}
+} */
 
 .container-wrapper {
   margin-left: auto;

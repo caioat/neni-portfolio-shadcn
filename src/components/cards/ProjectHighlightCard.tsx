@@ -29,7 +29,7 @@ export const ProjectHighlightCard = ({
             <CardTitle className="text-2xl">{title}</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-md leading-5">{content}</p>
+            <p className="font-light">{content}</p>
           </CardContent>
           <CardFooter>
             <Button variant="ghost" size="sm" className="text-sm" asChild>

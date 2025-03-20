@@ -25,12 +25,12 @@ export const MiniCard = ({
           )}
         >
           <div>
-            <CardHeader className="pb-2">
+            <CardHeader className="pb-2 pr-0">
               <CardTitle className="text-md font-bold leading-5">
                 {title}
               </CardTitle>
             </CardHeader>
-            <CardFooter>
+            <CardFooter className="pr-0">
               <p className="text-md leading-5 text-sm">{content}</p>
             </CardFooter>
           </div>
