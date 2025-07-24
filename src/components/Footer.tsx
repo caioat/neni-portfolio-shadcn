@@ -14,7 +14,7 @@ export const Footer = () => {
           <div className="flex justify-center">
             <Button
               size="icon"
-              className="bg-purple hover:bg-purple/80 rounded-full relative top-[-24px] w-12 h-12"
+              className="bg-purple hover:bg-purple-darker rounded-full relative top-[-24px] w-12 h-12"
               onClick={handleScrollToTop}
             >
               <MoveUp />
@@ -54,7 +54,7 @@ export const Footer = () => {
                   <a
                     href="https://www.linkedin.com/in/caio-augusto-travagin"
                     target="_blank"
-                    className="hover:underline"
+                    className="focus-visible:outline-0 focus-visible:underline hover:underline"
                   >
                     Caio
                   </a>

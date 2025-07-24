@@ -5,7 +5,10 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-sm text-sm font-light cursor-pointer transition-[color,box-shadow] disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 [&_svg]:shrink-0 ring-ring/10 dark:ring-ring/20 dark:outline-ring/40 outline-ring/50 focus-visible:ring-4 focus-visible:outline-1 aria-invalid:focus-visible:ring-0",
+  `inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-sm text-sm font-light cursor-pointer
+  transition-[color,box-shadow] disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none
+  [&_svg:not([class*='size-'])]:size-4 [&_svg]:shrink-0 ring-purple-lighter/50 dark:ring-ring/20 dark:outline-ring/40 outline-ring/50
+  focus-visible:ring-4 focus-visible:outline-0 aria-invalid:focus-visible:ring-0`,
   {
     variants: {
       variant: {
@@ -17,11 +20,11 @@ const buttonVariants = cva(
           "border border-input bg-background shadow-xs hover:bg-accent hover:text-accent-foreground",
         // secondary:
         //   "bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80",
-        secondary: "bg-purple text-white shadow-xs hover:bg-purple/80",
+        secondary: "bg-purple text-white shadow-xs hover:bg-purple-darker",
         ghostSecondary:
           "border-1 border-purple text-purple hover:bg-purple hover:text-white",
         ghost:
-          "border-1 border-white hover:bg-accent hover:text-accent-foreground",
+          "border-1 border-white ring-popover/25 hover:bg-accent hover:text-purple focus-visible:text-purple focus-visible:bg-accent",
         link: "text-primary underline-offset-4 hover:underline",
       },
       size: {

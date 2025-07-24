@@ -96,6 +96,9 @@
   --font-weight-semibold: 700;
   --font-weight-bold: 800;
   --color-purple: hsla(258, 82%, 51%, 1);
+  --color-purple-dark: hsla(258, 80%, 44%, 1);
+  --color-purple-darker: hsla(258, 83%, 32%, 1);
+  --color-purple-lighter: hsla(258, 100%, 70%, 1);
   /* my additions */
 }
 

@@ -17,10 +17,14 @@ export const MiniCard = ({
 }: MiniCardProps) => {
   return (
     <>
-      <a href={redirectLink} target="_blank">
+      <a
+        href={redirectLink}
+        target="_blank"
+        className="group focus-visible:outline-0"
+      >
         <Card
           className={cn(
-            "flex justify-between bg-secondary text-foreground",
+            "flex justify-between bg-secondary text-foreground group-focus-visible:bg-purple group-focus-visible:text-white group-hover:bg-purple group-hover:text-white",
             className
           )}
         >
@@ -35,7 +39,7 @@ export const MiniCard = ({
             </CardFooter>
           </div>
           <div className="flex items-center justify-center p-4">
-            <MoveRight className="text-purple" />
+            <MoveRight className="text-purple group-focus-visible:text-white group-hover:text-white" />
           </div>
         </Card>
       </a>

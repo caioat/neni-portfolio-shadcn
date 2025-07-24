@@ -46,7 +46,7 @@ export const AboutCard = ({
             <a
               href={redirectLink.href}
               target={redirectLink.target}
-              className="text-sm font-light text-purple p-0 hover:underline"
+              className="text-md text-purple p-0 focus-visible:outline-0 focus-visible:underline hover:underline"
             >
               <p className="flex items-center gap-2">
                 {redirectLink.text} <MoveRight />
