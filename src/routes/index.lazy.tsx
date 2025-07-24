@@ -42,32 +42,29 @@ function Index() {
           redirectLink="https://medium.com/design-bootcamp/creating-a-platform-to-help-donors-and-volunteers-find-ngos-that-align-with-their-profile-db371852a7f8"
         />
       </div>
-      <div className="pb-16 flex w-full gap-6">
+      <div className="pb-16 flex flex-wrap w-full">
         <div className="w-full">
-          <p className="pb-4 font-medium">Other projects</p>
+          <p className="pb-4 font-medium">Other projects and articles</p>
+        </div>
+        <div className="w-full gap-x-6 gap-y-4 grid grid-cols-2">
           <MiniCard
             title="Childhood Education Scenario in Brazil"
             content="User Research project for postgraduate course"
             redirectLink="https://carolinamiguel.medium.com/the-early-childhood-education-scenario-in-brazil-during-the-2020-pandemic-case-study-974c10041e51"
-            className="mb-4"
           />
           <MiniCard
             title="Creating an App for Pet Owners"
             content="UX/UI project for the postgraduate course"
             redirectLink="https://carolinamiguel.medium.com/creating-an-app-that-connects-pet-owners-and-veterinarians-case-study-aac77693542c"
           />
-        </div>
-        <div className="w-full">
-          <p className="pb-4 font-medium">Medium articles</p>
           <MiniCard
-            title="Storytelling de dados"
-            content="Lorem Ipsum is simply dummy "
-            redirectLink="/vet-system"
-            className="mb-4"
+            title="Storytelling with data"
+            content="Based on a workshop I presented to my design team"
+            redirectLink="https://carolinamiguel.medium.com/charts-tables-and-big-numbers-how-to-show-it-all-without-being-confusing-or-boring-292266fa14fa"
           />
           <MiniCard
             title="So, what is this thing called “Design” anyway?"
-            content="A girl explaining Design with humor"
+            content="Explaining design with humor"
             redirectLink="https://carolinamiguel.medium.com/esse-tal-de-design-5c38ac60c905"
           />
         </div>

@@ -57,7 +57,7 @@ function AboutMe() {
             Download CV <Download />
           </Button>
           <Button variant="ghostSecondary" className="ml-6 w-37 text-base">
-            Go to linkedin <MoveUpRight />
+            Go to Linkedin <MoveUpRight />
           </Button>
         </div>
       </div>
