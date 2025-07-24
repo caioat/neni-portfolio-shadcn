@@ -1,5 +1,5 @@
 import { createLazyFileRoute } from "@tanstack/react-router";
-import { Download, MoveUpRight } from "lucide-react";
+import { MoveUpRight } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { AboutCard } from "@/components/cards/AboutCard";
@@ -53,8 +53,13 @@ function AboutMe() {
           I'll also tell you a bit about my personal side.
         </p>
         <div className="pt-6 leading-6">
-          <Button variant="secondary" className="w-37 text-base">
-            Download CV <Download />
+          <Button variant="secondary" className="w-37 text-base" asChild>
+            <a
+              href="https://drive.google.com/file/d/1uuJKCwMGXMK1Bd8uk24znUx7h07urf7g/view?usp=sharing"
+              target="_blank"
+            >
+              View CV <MoveUpRight />
+            </a>
           </Button>
           <Button
             variant="ghostSecondary"
@@ -162,7 +167,7 @@ function AboutMe() {
           }}
           redirectLink={{
             href: "https://carolinamiguel.medium.com/",
-            target: "_target",
+            target: "_blank",
             text: "View all",
           }}
         />
