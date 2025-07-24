@@ -1,3 +1,4 @@
+import { Link } from "@tanstack/react-router";
 import {
   Card,
   CardContent,
@@ -43,15 +44,14 @@ export const AboutCard = ({
             <p className="text-md leading-5">{content}</p>
           </CardContent>
           <CardFooter>
-            <a
-              href={redirectLink.href}
-              target={redirectLink.target}
+            <Link
+              to={redirectLink.href}
               className="text-md text-purple p-0 focus-visible:outline-0 focus-visible:underline hover:underline"
             >
               <p className="flex items-center gap-2">
                 {redirectLink.text} <MoveRight />
               </p>
-            </a>
+            </Link>
           </CardFooter>
         </div>
       </Card>

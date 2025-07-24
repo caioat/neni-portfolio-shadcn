@@ -1,3 +1,4 @@
+import { Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 import { createLazyFileRoute } from "@tanstack/react-router";
 import underConstruction from "@/assets/under_construction.svg";
@@ -16,18 +17,14 @@ function Illustration() {
       </p>
       <div className="mb-8">
         <Button variant="secondary" className="w-37 text-base" asChild>
-          <a href="/" target="_self">
-            Design cases
-          </a>
+          <Link to="/">Design cases</Link>
         </Button>
         <Button
           variant="ghostSecondary"
           className="ml-6 w-37 text-base"
           asChild
         >
-          <a href="/aboutMe" target="_self">
-            About me
-          </a>
+          <Link to="/aboutMe">About me</Link>
         </Button>
       </div>
       <img src={underConstruction} alt="" />

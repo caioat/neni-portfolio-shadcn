@@ -56,8 +56,14 @@ function AboutMe() {
           <Button variant="secondary" className="w-37 text-base">
             Download CV <Download />
           </Button>
-          <Button variant="ghostSecondary" className="ml-6 w-37 text-base">
-            Go to Linkedin <MoveUpRight />
+          <Button
+            variant="ghostSecondary"
+            className="ml-6 w-37 text-base"
+            asChild
+          >
+            <a href="https://www.linkedin.com/in/carolmiguel" target="_blank">
+              Go to Linkedin <MoveUpRight />
+            </a>
           </Button>
         </div>
       </div>
