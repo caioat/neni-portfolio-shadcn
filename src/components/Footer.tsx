@@ -54,7 +54,7 @@ export const Footer = () => {
                   <a
                     href="https://www.linkedin.com/in/caio-augusto-travagin"
                     target="_blank"
-                    className="focus-visible:outline-0 focus-visible:underline hover:underline"
+                    className="focus-visible:outline-0 underline"
                   >
                     Caio
                   </a>
