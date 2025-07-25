@@ -40,7 +40,7 @@ function AboutMe() {
           Illustration for digital and printed services.
           <br />
           <br />
-          For the last 4 years, I've focused my career on Product Design. I love
+          For the last 5 years, I've focused my career on Product Design. I love
           creating pleasant experiences for users while adding value to the
           company's business. As an illustrator, I also bring this skill to
           everyday life, contributing with icons and customized illustration
