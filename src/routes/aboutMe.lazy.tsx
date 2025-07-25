@@ -23,13 +23,19 @@ import photoAboutMe16 from "@/assets/photo_aboutMe_16.svg";
 import photoAboutMe17 from "@/assets/photo_aboutMe_17.svg";
 import aboutMeCard1 from "@/assets/aboutMe_card_1.svg";
 import aboutMeCard2 from "@/assets/aboutMe_card_2.svg";
+import useWindowDimensions from "@/components/hooks/useWindowDimensions";
+import TempEmptyMobile from "@/components/TempEmptyMobile";
 
 export const Route = createLazyFileRoute("/aboutMe")({
   component: AboutMe,
 });
 
 function AboutMe() {
-  return (
+  const { width } = useWindowDimensions();
+
+  return width < 912 ? (
+    <TempEmptyMobile />
+  ) : (
     <div className="grid grid-cols-10 gap-6">
       <div className="col-span-6 text-xl">
         <h2>Get to know the adventurer behind the adventures</h2>

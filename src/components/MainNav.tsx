@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 
 export const MainNav = () => {
   return (
-    <div className="hidden md:flex w-full justify-between items-baseline">
+    <div className="md:flex w-full justify-between items-baseline">
       <p className="font-bold">Carolina Miguel</p>
 
       <nav className="flex items-center gap-4 xl:gap-6">

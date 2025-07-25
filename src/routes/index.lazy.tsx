@@ -10,13 +10,19 @@ import postGraduationCard from "../assets/post_graduation_card.svg";
 import avatar from "../assets/avatar.svg";
 import { TestimonialCard } from "@/components/cards/TestimonialCard";
 import { CaptainWidget } from "@/components/CaptainWidget";
+import useWindowDimensions from "@/components/hooks/useWindowDimensions";
+import TempEmptyMobile from "@/components/TempEmptyMobile";
 
 export const Route = createLazyFileRoute("/")({
   component: Index,
 });
 
 function Index() {
-  return (
+  const { width } = useWindowDimensions();
+
+  return width < 912 ? (
+    <TempEmptyMobile />
+  ) : (
     <>
       <CaptainWidget />
       <div className="pb-16">

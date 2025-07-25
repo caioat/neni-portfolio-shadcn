@@ -1,14 +1,19 @@
 import { Button } from "./ui/button";
 import { MoveUp, MoveUpRight, Mail, Linkedin } from "lucide-react";
 import owl1 from "../assets/owl_1.svg";
+import useWindowDimensions from "./hooks/useWindowDimensions";
 
 export const Footer = () => {
+  const { width } = useWindowDimensions();
+
   const handleScrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
-    <footer className="py-6 md:py-0 bg-foreground">
+    <footer
+      className={`py-6 md:py-0 bg-foreground ${width < 912 ? "hidden" : ""}`}
+    >
       <div className="container-wrapper">
         <div className="h-[378px]">
           <div className="flex justify-center">

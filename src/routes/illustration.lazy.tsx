@@ -2,13 +2,19 @@ import { Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 import { createLazyFileRoute } from "@tanstack/react-router";
 import underConstruction from "@/assets/under_construction.svg";
+import useWindowDimensions from "@/components/hooks/useWindowDimensions";
+import TempEmptyMobile from "@/components/TempEmptyMobile";
 
 export const Route = createLazyFileRoute("/illustration")({
   component: Illustration,
 });
 
 function Illustration() {
-  return (
+  const { width } = useWindowDimensions();
+
+  return width < 912 ? (
+    <TempEmptyMobile />
+  ) : (
     <div className="flex flex-col items-center justify-center space-y-6">
       <h2 className="mb-4">Page under construction</h2>
       <p className="text-xl text-center leading-6.5 mb-4">
